@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    access_lint_rails (0.0.1)
+    access_lint-rails (0.0.1)
       rails (~> 4.2)
 
 GEM
@@ -101,7 +101,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  access_lint_rails!
+  access_lint-rails!
 
 BUNDLED WITH
    1.10.6
