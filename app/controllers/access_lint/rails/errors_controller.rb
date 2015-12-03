@@ -5,8 +5,6 @@ module AccessLint
     class ErrorsController < AccessLint::Rails::ApplicationController
       def create
         raise Error, params.fetch(:results)
-
-        head :ok
       end
     end
   end
