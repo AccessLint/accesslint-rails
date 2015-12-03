@@ -2,11 +2,15 @@
 
 AccessLint::Rails tests and reports accessibility errors in your Rails app.
 
-Include the gem's javascript that will run accessibility tests in the client,
-and POST results back to your application at a mounted endpoint. This endpoint
-raises and exception that will be captured by your exception notifier.
+To run accessibility tests in the browser, include the linter JavaScript which
+will `POST` results to your application at a mounted endpoint.
+
+The endpoint raises an exception that will be captured and reported by your
+exception notifier.
 
 ## Usage
+
+First, add the gem to your bundle:
 
 ```ruby
 # Gemfile
@@ -14,11 +18,17 @@ raises and exception that will be captured by your exception notifier.
 gem "access_lint-rails", github: "accesslint/access_lint-rails"
 ```
 
-```javascript
-// app/assets/javascripts/application.js
+Then, invoke the helper at the bottom of your `<body>` tag:
 
-//= require accesslint
+```erb
+<!-- app/views/layouts/application.html.erb -->
+
+<body>
+  <%= include_access_lint %>
+</body>
 ```
+
+Finally, for local reporting, mount the engine:
 
 ```ruby
 # config/routes.rb
