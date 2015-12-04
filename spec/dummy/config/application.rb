@@ -9,7 +9,7 @@ require "action_view/railtie"
 require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "access_lint_rails"
+require "access_lint-rails"
 
 module Dummy
   class Application < Rails::Application

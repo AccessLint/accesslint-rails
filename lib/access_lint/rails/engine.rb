@@ -3,10 +3,12 @@ module AccessLint
     class Engine < ::Rails::Engine
       isolate_namespace AccessLint::Rails
 
-      config.assets.precompile << "accesslint.js"
+      initializer "access_lint-rails" do |app|
+        app.config.assets.precompile << "accesslint.js"
 
-      config.to_prepare do
-        ActionController::Base.helper AccessLintHelper
+        app.config.to_prepare do
+          ActionController::Base.helper AccessLintHelper
+        end
       end
     end
   end

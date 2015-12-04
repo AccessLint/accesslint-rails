@@ -1,0 +1,73 @@
+Started GET "/" for 127.0.0.1 at 2015-12-03 17:53:11 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 17:54:52 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 17:55:44 -0500
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 17ms
+Started GET "/" for 127.0.0.1 at 2015-12-03 17:58:52 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 14.6ms)
+Started GET "/" for 127.0.0.1 at 2015-12-03 17:59:10 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.9ms)
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-12-03 17:59:10 -0500
+Started GET "/javascripts/accesslint.js" for 127.0.0.1 at 2015-12-03 17:59:10 -0500
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-12-03 17:59:10 -0500
+Started GET "/foo.png" for 127.0.0.1 at 2015-12-03 17:59:10 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 17:59:37 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 8.1ms)
+Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-12-03 17:59:37 -0500
+Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-12-03 17:59:37 -0500
+Started GET "/javascripts/accesslint.js" for 127.0.0.1 at 2015-12-03 17:59:37 -0500
+Started GET "/foo.png" for 127.0.0.1 at 2015-12-03 17:59:37 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 17:59:51 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.8ms)
+Started GET "/javascripts/accesslint.js" for 127.0.0.1 at 2015-12-03 17:59:52 -0500
+Started GET "/foo.png" for 127.0.0.1 at 2015-12-03 17:59:52 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 18:00:45 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 8.0ms)
+Started GET "/javascripts/accesslint.js" for 127.0.0.1 at 2015-12-03 18:00:45 -0500
+Started GET "/foo.png" for 127.0.0.1 at 2015-12-03 18:00:45 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 18:01:37 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 8.4ms)
+Started GET "/javascripts/accesslint.js" for 127.0.0.1 at 2015-12-03 18:01:37 -0500
+Started GET "/foo.png" for 127.0.0.1 at 2015-12-03 18:01:37 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 18:01:57 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.8ms)
+Started GET "/javascripts/accesslint.js" for 127.0.0.1 at 2015-12-03 18:01:57 -0500
+Started GET "/foo.png" for 127.0.0.1 at 2015-12-03 18:01:57 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 18:04:08 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 8.0ms)
+Started GET "/javascripts/accesslint.js" for 127.0.0.1 at 2015-12-03 18:04:08 -0500
+Started GET "/foo.png" for 127.0.0.1 at 2015-12-03 18:04:08 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 18:05:03 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 8.5ms)
+Started GET "/javascripts/accesslint.js" for 127.0.0.1 at 2015-12-03 18:05:03 -0500
+Started GET "/foo.png" for 127.0.0.1 at 2015-12-03 18:05:03 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 18:05:21 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 8.4ms)
+Started GET "/javascripts/accesslint.js" for 127.0.0.1 at 2015-12-03 18:05:21 -0500
+Started GET "/foo.png" for 127.0.0.1 at 2015-12-03 18:05:21 -0500
+Started GET "/" for 127.0.0.1 at 2015-12-03 18:05:53 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 8.0ms)
+Started GET "/javascripts/accesslint.js" for 127.0.0.1 at 2015-12-03 18:05:53 -0500
+Started GET "/foo.png" for 127.0.0.1 at 2015-12-03 18:05:53 -0500
