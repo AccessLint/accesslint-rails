@@ -27,11 +27,3 @@ Then, invoke the helper at the bottom of your `<body>` tag:
   <%= include_access_lint %>
 </body>
 ```
-
-Finally, for local reporting, mount the engine:
-
-```ruby
-# config/routes.rb
-
-mount AccessLint::Rails::Engine => "/accesslint"
-```
