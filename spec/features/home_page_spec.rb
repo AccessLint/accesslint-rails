@@ -2,13 +2,19 @@ require "spec_helper"
 
 feature "Visiting the homepage", :js do
   scenario "has errors" do
+    allow(Rails.logger).to receive(:warn).and_call_original
+
     visit "/"
 
-    fill_in "my-input", with: "my text!"
-    error_messages = page.driver.error_messages.map do |message|
-      message.fetch(:message)
-    end
+    expect(page).to have_field "my-input"
+    expect(page).not_to have_css "label"
+    expect(page).not_to have_css "html[lang]"
+    fill_in "my-input", with: "hello"
 
-    expect(error_messages).to include /AccessLint/
+    sleep 1
+
+    expect(Rails.logger).to have_received(:warn).once.with(/contrast/)
+    expect(Rails.logger).to have_received(:warn).once.with(/label/)
+    expect(Rails.logger).to have_received(:warn).once.with(/lang/)
   end
 end
