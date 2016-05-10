@@ -9,7 +9,6 @@ feature "Visiting the homepage", :js do
     expect(page).to have_field "my-input"
     expect(page).not_to have_css "label"
     expect(page).not_to have_css "html[lang]"
-    fill_in "my-input", with: "hello"
 
     sleep 1
 
