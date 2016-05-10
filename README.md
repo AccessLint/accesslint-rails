@@ -59,5 +59,6 @@ Completed 200 OK in 1ms
 
 ## How it works
 
-AccessLint::Rails injects aXe-core accessibility tests into the browser and logs
-the resulting errors to the application logs via a mounted endpoint in the app.
+AccessLint::Rails injects [aXe-core](https://github.com/dequelabs/axe-core)
+accessibility tests into the browser and logs the resulting errors to the
+application logs via a mounted endpoint in the app.
