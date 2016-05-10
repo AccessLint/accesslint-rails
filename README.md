@@ -1,7 +1,6 @@
 # AccessLint::Rails
 
-AccessLint::Rails tests and logs accessibility errors in your Rails
-application.
+AccessLint::Rails tests and logs accessibility errors in your Rails application.
 
 ## Usage
 
@@ -57,3 +56,8 @@ Started GET "/" for 127.0.0.1 at 2016-05-06 18:06:39 -0400
 [AccessLint] "/" - Form elements must have labels - #my-input
 Completed 200 OK in 1ms
 ```
+
+## How it works
+
+AccessLint::Rails injects aXe-core accessibility tests into the browser and logs
+the resulting errors to the application logs via a mounted endpoint in the app.
