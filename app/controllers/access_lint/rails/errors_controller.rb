@@ -8,7 +8,7 @@ module AccessLint
       def create
         warnings.each do |warning|
           logger.tagged("AccessLint") do
-            logger.warn("\"#{url}\" - #{warning.message}")
+            logger.warn(warning.message)
           end
         end
 
@@ -19,7 +19,7 @@ module AccessLint
 
       def warnings
         violations_params.map do |violation|
-          Warning.new(violation)
+          Warning.new(url, violation)
         end
       end
 
