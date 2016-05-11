@@ -9,7 +9,7 @@ Given a page with the following:
 <input id="my-input" type="text">
 ```
 
-You'd see the following tagged entries in your Rails logs:
+You'd see JavaScript console messages in your browser, and the following tagged entries in your Rails logs:
 
 ```
 Started GET "/"
