@@ -1,0 +1,3 @@
+en:
+  warning:
+    message: "%{help_text} - %{nodes}"

@@ -12,7 +12,7 @@ feature "Visiting the homepage", :js do
 
     sleep 1
 
-    expect(Rails.logger).to have_received(:warn).once.with(/contrast/)
+    expect(Rails.logger).to have_received(:warn).twice.with(/warning/)
     expect(Rails.logger).to have_received(:warn).once.with(/label/)
     expect(Rails.logger).to have_received(:warn).once.with(/lang/)
   end

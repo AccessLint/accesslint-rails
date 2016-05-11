@@ -6,7 +6,7 @@ module AccessLint
       end
 
       def message
-        [help_text, target_nodes].join(" - ")
+        I18n.t("warning.message", help_text: help_text, nodes: target_nodes)
       end
 
       private
