@@ -3,6 +3,8 @@ require "warning"
 module AccessLint
   module Rails
     class ErrorsController < ApplicationController
+      skip_before_action :verify_authenticity_token, only: :create
+
       def create
         warnings.each do |warning|
           logger.tagged("AccessLint") do
