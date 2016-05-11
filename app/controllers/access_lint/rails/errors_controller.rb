@@ -22,11 +22,15 @@ module AccessLint
       end
 
       def violations_params
-        params.require(:violations)
+        accesslint_params.fetch(:violations)
+      end
+
+      def accesslint_params
+        params.require(:accesslint)
       end
 
       def url
-        URI.parse(params.require(:url)).path
+        URI.parse(accesslint_params.fetch(:url))
       end
 
       def logger

@@ -5,7 +5,6 @@ module AccessLint
 
       initializer "access_lint-rails" do |app|
         app.config.assets.precompile << "accesslint.js"
-
         app.config.to_prepare do
           ActionController::Base.helper AccessLintHelper
         end
