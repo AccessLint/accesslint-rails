@@ -6,7 +6,8 @@
   </head>
   <body>
     <%= yield %>
-
-    <%= include_access_lint %>
+    <% if Rails.env.test? || Rails.env.development? %>
+      <%= include_access_lint %>
+    <% end %>
   </body>
 </html>

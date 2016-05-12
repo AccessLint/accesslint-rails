@@ -1,0 +1,18 @@
+Description:
+    In development and test only, include accesslint.js and add /access_lint/errors route (for Rails server logging)
+
+Example:
+    rails generate access_lint:install
+
+    This will add:
+      # config/routes.rb
+
+      if Rails.env.test? || Rails.env.development?
+        mount AccessLint::Rails::Engine, at: "access_lint"
+      end
+
+      # app/views/application.html.erb
+
+      <% if Rails.env.test? || Rails.env.development? %>
+        <%= include_access_lint %>
+      <% end %>
