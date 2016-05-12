@@ -5,7 +5,7 @@ module AccessLint
 
       desc "Add AccessLint routes and include statements."
       def insert_route
-        insert_into_file "config/routes.rb", :after => "Rails.application.routes.draw do\n" do
+        insert_into_file "config/routes.rb", :after => /routes.draw do\n/ do
           <<-RUBY.strip_heredoc
             if Rails.env.test? || Rails.env.development?
               mount AccessLint::Rails::Engine, at: "access_lint"
