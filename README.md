@@ -1,6 +1,26 @@
 # AccessLint::Rails
 
-AccessLint::Rails tests and logs accessibility errors in your Rails application.
+AccessLint::Rails tests your pages for accessibility issues and logs them in the browser and Rails server logs.
+
+## Usage
+
+First, add the gem to your Gemfile and run `$ bundle install`
+
+```ruby
+# Gemfile
+
+group :development, :test do
+  gem "access_lint-rails", github: "accesslint/access_lint-rails"
+end
+```
+
+Then run:
+
+    $ rails generate access_lint:install
+
+This will add a error handling route and inject the javascript into your page (in development and test environments).
+
+## Example
 
 Given a page with the following:
 
@@ -22,41 +42,3 @@ Completed 200 OK in 10ms
 ## How it works
 
 AccessLint::Rails injects [accesslint.js](https://github.com/thoughtbot/accesslint.js), which runs [aXe-core](https://github.com/dequelabs/axe-core) accessibility tests into the browser, and logs the resulting errors to the console application logs via a mounted endpoint in your Rails app.
-
-## Usage
-
-First, add the gem to your bundle:
-
-```ruby
-# Gemfile
-
-group :development, :test do
-  gem "access_lint-rails", github: "accesslint/access_lint-rails"
-end
-```
-
-Add an endpoint for error handling:
-
-```ruby
-# config/routes.rb
-
-Rails.application.routes.draw do
-  if Rails.env.test? || Rails.env.development?
-    mount AccessLint::Rails::Engine, at: "access_lint"
-  end
-
-  ...
-```
-
-Then invoke the helper at the bottom of your `<body>` tag:
-
-```erb
-<!-- app/views/layouts/application.html.erb -->
-...
-<body>
-  ...
-  <% if Rails.env.test? || Rails.env.development? %>
-    <%= include_access_lint %>
-  <% end %>
-</body>
-```
